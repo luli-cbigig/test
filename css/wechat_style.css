@@ -109,25 +109,23 @@
   display: none;
 }
 #wrap .titiles .iocns #jiahao{
-  width: 320px;
+  width: 395px;
   background-color: #555555;
+  border-radius: 10px;
   position: absolute;
   right: 35px;
   top: 160px;
   z-index: 521;
 }
-#wrap .titiles .iocns a{
-  text-decoration: none;
-  color: #000000;
-}
 #wrap .titiles #jiahao .jiahao_content{
-  height: 500px;
+  height: 630px;
 }
 #wrap .titiles #jiahao .jiahao_content li{
-  height: 100px;
+  height: 125px;
   font-family: 仿宋;
   font-size: 40px;
   color: white;
+  border-bottom:1px solid rgba(136,136,136,0.5);
 }
 #wrap .titiles .iocns #triangle{
   width: 0;
@@ -139,13 +137,25 @@
   right: 51px;
   top: 141px;
 }
-#wrap .titiles .iocns a:hover+#jiahao_one{
+#wrap .titiles .iocns .test1:hover+#jiahao_one{
   display: block;
 }
 @keyframes charge {
   20%{
     color: red;
   }
+  40%{
+    color: #b3d4fc;
+  }
+  60%{
+    color: blue;
+  }
+  80%{
+    color: chartreuse;
+  }
+  100%{
+    color: green;
+}
 }
 .gra_change{
   
