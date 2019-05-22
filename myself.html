@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="css/wechat_style.css" rel="stylesheet">
+    <style>
+      #wrap .top{
+        background-color: white;
+      }
+      #wrap .titiles{
+        background-color: white;
+        height: 300px;
+      }
+      .titiles .iocns{
+        margin: 0 10px;
+        float: right;
+      }
+      #wrap .titiles img{
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin: 110px 80px 0;
+        border-radius: 520px;
+      }
+      #wrap .titiles #username,#wechat_id{
+        font-family: 仿宋;
+        font-weight: 500;
+      }
+      #username{
+        width: 310px;
+        font-size: 50px;
+        margin: 120px 0 30px;
+        float: left;
+      }
+      #wechat_id{
+        width: 310px;
+        font-size: 30px;
+        margin: 40px 0 0 300px;
+      }
+      #wrap ul li{
+        border: none;
+        width: 100%;
+      }
+      #wrap li div{
+        font-size: 50px;
+        font-family: 仿宋;
+        float: left;
+      }
+      #wrap .test6{
+        font-size: 80px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        margin: 10px 10px;
+      }
+      .anno{
+        margin: 25px 20px;
+        font-weight: 500;
+      }
+      #wrap ul{
+        height: 1093px;
+      }
+      #wrap .test7{
+        margin: 25px 10px;
+        float: right;
+        opacity: 0.6;
+      }
+      #wrap .back_color{
+        height: 30px;
+        background-color: #ecf0f1;
+        opacity: 0.9;
+      }
+    </style>
+</head>
+<body>
+  <div id="wrap">
+  <div class="top">
+    <div id="time" class="times">
+      <script>
+        setInterval("fun(time)",1);//按照指定的周期来调用函数或计算表达式
+        function fun(timeID){//创建函数
+          var date=new Date();//创建对象
+          var h=date.getHours();
+          var min=date.getMinutes();
+          if (h<10){
+            h="0"+h;
+          }
+          if (min<10){
+            min="0"+min;
+          }
+          document.getElementById(timeID.id).innerHTML=h+":"+min
+        }
+      </script>
+    </div>
+    <div class="iocns">
+      <span class="iconfont test">&#xeb20;</span>
+      <span class="iconfont test">&#xeb07;</span>
+      <span class="iconfont test">&#xeb0b;</span>
+      <span class="iconfont test">&#xe626;</span>
+      <span class="iconfont test">&#xeb0c;</span>
+      <span class="iconfont test">&#xe747;</span>
+    </div>
+  </div>
+  <div class="titiles">
+    <img src="img/eab78d0f1a6192fa96b107fcb48c330.jpg" alt="加载失败">
+    <div id="username">光怪陸離</div>
+    <div class="iocns">
+    <span class="iconfont test1">&#xeb0a;</span>
+    </div>
+    <div id="wechat_id">微信号：xlxl15824609</div>
+  </div>
+    <div class="back_color"></div>
+  <ul>
+    <li><div class="iconfont test6">&#xeb0f;</div><div class="anno">支付</div><div class="iconfont test7">&#xe60b;</div></li>
+    <div class="back_color"></div>
+    <li><div class="iconfont test6">&#xe620;</div><div class="anno">收藏</div><div class="iconfont test7">&#xe60b;</div></li>
+    <li><div class="iconfont test6">&#xe622;</div><div class="anno">相册</div><div class="iconfont test7">&#xe60b;</div></li>
+    <li><div class="iconfont test6">&#xe616;</div><div class="anno">卡包</div><div class="iconfont test7">&#xe60b;</div></li>
+    <li><div class="iconfont test6">&#xeb12;</div><div class="anno">表情</div><div class="iconfont test7">&#xe60b;</div></li>
+    <div class="back_color"></div>
+    <li><div class="iconfont test6">&#xe6ee;</div><div class="anno">设置</div><div class="iconfont test7">&#xe60b;</div></li>
+    <div class="back_color"></div>
+  </ul>
+  <div class="manager">
+    <a href="微信页面.html"><div><span class="iconfont">&#xe63c;</span><br><span><strong>微信</strong></span></div></a>
+    <a href="address_book.html"><div><span class="iconfont">&#xe6c2;</span><br><span><strong>通讯录</strong></span></div></a>
+    <a href="discover.html"><div><span class="iconfont">&#xe629;</span><br><span><strong>发现</strong></span></div></a>
+    <a href="myself.html"><div  style="color: #62b900"><span class="iconfont">&#xe61e;</span><br><span><strong>我</strong></span></div></a>
+  </div>
+</div>
+</body>
+</html>

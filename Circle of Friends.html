@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友圈</title>
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/wechat_style.css">
+  <style>
+    #wrap .top,.titiles{
+      opacity: 0.5;
+    }
+    #wrap .titiles{
+      color: black;
+    }
+    #wrap .titiles a{
+      text-decoration: none;
+    }
+    .test2{
+      font-size: 50px;
+      color: black;
+    }
+    #back_img{
+      width: 100%;
+      height: 700px;
+      background-image: url("img/插画3.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 700px;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    #back_img img{
+       width: 200px;
+       height: 200px;
+       border-radius: 30px;
+       float: right;
+      position: relative;
+      right: 35px;
+      bottom: -420px;
+     }
+    .username1{
+      font-family: 仿宋;
+      font-size: 50px;
+      color: white;
+      float: right;
+      position: relative;
+      right: 250px;
+      bottom: 140px;
+    }
+    #friends{
+      margin-top: 100px;
+    }
+    .fri_ava img{
+      width: 100px;
+      height: 100px;
+      float: left;
+    }
+    .fri_name,.fri_con{
+      float: left;
+    }
+    .fri_1{
+      width: 100%;
+      height: 1024px;
+    }
+    #wrap #friends .fri_1 div{
+      font-family: 仿宋;
+      font-size: 40px;
+    }
+    #wrap #friends .fri_1 .fri_name{
+      font-size: 60px;
+    }
+    #wrap .fri_con{
+      margin:0 50px 0 110px;
+    }
+    .fri_pho{
+      margin:0 50px 10px 110px;
+    }
+    .fri_pho img{
+      float: left;
+      width: 250px;
+      height: 250px;
+    }
+    .gengduo{
+      font-size: 50px;
+      background-color: #888888;
+      border-radius: 10px;
+    }
+    .gengduo1{
+      float: right;
+      position: relative;
+      right: 60px;
+      top: 270px;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="wrap">
+      <div id="back_img">
+        <div class="top">
+          <div id="time" class="times">
+            <script>
+              setInterval("fun(time)",1);//按照指定的周期来调用函数或计算表达式
+              function fun(timeID){//创建函数
+                var date=new Date();//创建对象
+                var h=date.getHours();
+                var min=date.getMinutes();
+                var s=date.getSeconds();
+                if (h<10){
+                  h="0"+h;
+                }
+                if (min<10){
+                  min="0"+min;
+                }
+                document.getElementById(timeID.id).innerHTML=h+":"+min
+              }
+            </script>
+          </div>
+          <div class="iocns">
+            <span class="iconfont test">&#xeb20;</span>
+            <span class="iconfont test">&#xeb07;</span>
+            <span class="iconfont test">&#xeb0b;</span>
+            <span class="iconfont test">&#xe626;</span>
+            <span class="iconfont test">&#xeb0c;</span>
+            <span class="iconfont test">&#xe747;</span>
+          </div>
+        </div>
+        <div class="titiles">
+          <a href="discover.html">
+            <div class="tit_content">
+              <span class="iconfont test2">&#xeb09;</span>
+            </div>
+          </a>
+          <div class="iocns">
+            <span class="iconfont test1">&#xeb0a;</span>
+          </div>
+        </div>
+        <div style="height: 620px">
+          <img src="img/eab78d0f1a6192fa96b107fcb48c330.jpg">
+        </div>
+        <div class="username1"><span>光怪陸離</span></div>
+      </div>
+      <div id="friends">
+        <div class="fri_1">
+          <div class="fri_ava">
+            <img src="img/t-09.jpg" alt="加载失败">
+          </div>
+          <div class="fri_name">疯白</div>
+          <div class="fri_con">错过的就是错过了，即使再去挽留也不会留得住的...毕竟，不会有那么多机会</div>
+          <div class="fri_pho">
+            <img src="img/t-12.jpg" alt="加载失败">
+            <img src="img/t-18.jpg" alt="加载失败">
+            <img src="img/t-16.jpg" alt="加载失败">
+            <img src="img/t-14.jpg" alt="加载失败">
+            <img src="img/t-22.jpg" alt="加载失败">
+            <img src="img/t-23.jpg" alt="加载失败">
+            <img src="img/t-25.jpg" alt="加载失败">
+            <img src="img/t-26.jpg" alt="加载失败">
+            <img src="img/t-28.jpg" alt="加载失败">
+            <div class="gengduo1"><span class="iconfont gengduo">&#xeb1a;</span></div>
+            <div class="dianzai"><span></span></div>
+          </div>
+        </div>
+        <div class="fri_1">
+          <div class="fri_ava">
+            <img src="img/t-29.jpg" alt="加载失败">
+          </div>
+          <div class="fri_name">狂傲</div>
+          <div class="fri_con"></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

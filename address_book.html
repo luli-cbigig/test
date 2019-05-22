@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="css/wechat_style.css" rel="stylesheet">
+    <style>
+      .titiles .tit_content{
+        width: 115px;
+      }
+      /*#wrap dl{*/
+        /*list-style: none;*/
+        /*height: 3000px;*/
+        /*overflow: scroll;*/
+      /*}*/
+      /*#wrap dl dt{*/
+        /*height: 50px;*/
+        /*border-bottom: solid 1px #000;*/
+        /*font-size: 30px;*/
+      /*}*/
+      #wrap .manager{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+      #wrap ul a{
+        text-decoration: none;
+        font-size: 35px;
+        font-family: 仿宋;
+        color: black;
+      }
+      .test3{
+        font-size: 80px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        margin: 10px 10px;
+        float: left;
+      }
+      .describe{
+        float: left;
+        margin: 35px 10px;
+      }
+      #wrap dl dt{
+        background-color: #ecf0f1;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 30px;
+        height: 30px;
+        background-color: gainsboro;
+      }
+      #wrap dl dd{
+        height: 140px;
+      }
+      .test2{
+         font-size:50px;
+         margin:0 25px;
+       }
+      .index{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;/*弹性布局*/
+        flex-direction: column;
+        justify-content: center;
+      }
+      .index a{
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #fff;
+        outline: 0;
+        margin: 5px;
+      }
+      .index a:active:after{
+        content: attr(data-type);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 50px;
+        transform: translate(-50%,-50%);
+        background: rgba(0,0,0,.5);
+      }
+      .fri_rem{
+        font-size: 40px;
+        line-height: 140px;
+        height: 140px;
+        margin-left: 10px;
+        font-family: 仿宋;
+      }
+      #wrap ul dl div img{
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 30px 0 10px 20px;
+      }
+      .fri_name{
+        margin-left: 120px;
+        height: 140px;
+        width: 89%;
+        border-bottom: #dcdcdc 1px solid;
+      }
+    </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="top">
+      <div id="time" class="times">
+        <script>
+          setInterval("fun(time)",1);//按照指定的周期来调用函数或计算表达式
+          function fun(timeID){//创建函数
+            var date=new Date();//创建对象
+            var h=date.getHours();
+            var min=date.getMinutes();
+            if (h<10){
+              h="0"+h;
+            }
+            if (min<10){
+              min="0"+min;
+            }
+            document.getElementById(timeID.id).innerHTML=h+":"+min
+          }
+        </script>
+      </div>
+      <div class="iocns">
+        <span class="iconfont test">&#xeb20;</span>
+        <span class="iconfont test">&#xeb07;</span>
+        <span class="iconfont test">&#xeb0b;</span>
+        <span class="iconfont test">&#xe626;</span>
+        <span class="iconfont test">&#xeb0c;</span>
+        <span class="iconfont test">&#xe747;</span>
+      </div>
+    </div>
+    <div class="titiles">
+      <div class="tit_content"><strong>通讯录</strong></div>
+      <div class="iocns">
+        <a href=""><span class="iconfont test1">&#xe61c;</span></a>
+        <div id="jiahao_one">
+          <div id="triangle"></div>
+          <div id="jiahao">
+            <ul class="jiahao_content">
+              <li><span class="iconfont test2">&#xe61d;</span><span class="anno_1">发起群聊</span></li>
+              <li><span class="iconfont test2">&#xe630;</span><span class="anno_1">新的朋友</span></li>
+              <li><span class="iconfont test2">&#xe601;</span><span class="anno_1">扫一扫</span></li>
+              <li><span class="iconfont test2">&#xe602;</span><span class="anno_1">收付款</span></li>
+              <li><span class="iconfont test2">&#xe647;</span><span class="anno_1">帮助与反馈</span></li>
+            </ul>
+          </div>
+        </div>
+        <span class="iconfont test1">&#xe63d;</span>
+      </div>
+    </div>
+      <ul>
+          <a href="">
+            <li>
+              <div><div class="iconfont test3">&#xe630;</div><div class="describe">新的朋友</div></div>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <div><div class="iconfont test3">&#xeb0d;</div><div class="describe">群聊</div></div>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <div><div class="iconfont test3">&#xeb14;</div><div class="describe">标签</div></div>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <div><div class="iconfont test3">&#xeb0e;</div><div class="describe">公众号</div></div>
+            </li>
+          </a>
+        <div>
+          <dl>
+            <dt>A</dt>
+            <dd>
+              <div>
+                <img src="img/t-05.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">aic.</span>
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img src="img/t-2.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">安然</span>
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img src="img/t-16.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">安博</span>
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img src="img/t-13.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">艾比利</span>
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img src="img/t-1.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">艾克姐</span>
+              </div>
+            </dd>
+            <dt>B</dt>
+            <dd>
+              <div>
+                <img src="img/t-21.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">笨蛋</span>
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img src="img/t-26.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">白羊</span>
+              </div>
+            </dd>
+            <dd>
+              <div>
+                <img src="img/t-32.jpg" alt="加载失败">
+              </div>
+              <div class="fri_name">
+                <span class="fri_rem">半夜晚</span>
+              </div>
+            </dd>
+          </dl>
+          <div class="index" id="index">
+            <a href="#↑" data-type="↑">↑</a>
+            <a href="#☆" data-type="☆">☆</a>
+            <a href="#A" data-type="A">A</a>
+            <a href="#B" data-type="B">B</a>
+            <a href="#C" data-type="C">C</a>
+            <a href="#D" data-type="D">D</a>
+            <a href="#E" data-type="E">E</a>
+            <a href="#F" data-type="F">F</a>
+            <a href="#G" data-type="G">G</a>
+            <a href="#H" data-type="H">H</a>
+            <a href="#I" data-type="I">I</a>
+            <a href="#J" data-type="J">J</a>
+            <a href="#K" data-type="K">K</a>
+            <a href="#L" data-type="L">L</a>
+            <a href="#M" data-type="M">M</a>
+            <a href="#N" data-type="N">N</a>
+            <a href="#O" data-type="O">O</a>
+            <a href="#P" data-type="P">P</a>
+            <a href="#Q" data-type="Q">Q</a>
+            <a href="#R" data-type="R">R</a>
+            <a href="#S" data-type="S">S</a>
+            <a href="#T" data-type="T">T</a>
+            <a href="#U" data-type="U">U</a>
+            <a href="#V" data-type="V">V</a>
+            <a href="#W" data-type="W">W</a>
+            <a href="#X" data-type="X">X</a>
+            <a href="#Y" data-type="Y">Y</a>
+            <a href="#Z" data-type="Z">Z</a>
+            <a href="#" data-type="#">#</a>
+          </div>
+        </div>
+        </ul>
+      <!--<dl>-->
+        <!--<dt>A</dt>-->
+        <!--<dd>aic.</dd>-->
+        <!--<dd>az</dd>-->
+        <!--<dd>aza</dd>-->
+        <!--<dd>azb</dd>-->
+        <!--<dd>azc</dd>-->
+        <!--<dd>azci</dd>-->
+        <!--<dd>azs</dd>-->
+        <!--<dd>azsi</dd>-->
+      <!--</dl>-->
+    <div class="manager">
+      <a href="微信页面.html"><div><span class="iconfont">&#xe63c;</span><br><span><strong>微信</strong></span></div></a>
+      <a href="address_book.html"><div  style="color: #62b900"><span class="iconfont">&#xe6c2;</span><br><span><strong>通讯录</strong></span></div></a>
+      <a href="discover.html"><div><span class="iconfont">&#xe629;</span><br><span><strong>发现</strong></span></div></a>
+      <a href="myself.html"><div><span class="iconfont">&#xe61e;</span><br><span><strong>我</strong></span></div></a>
+    </div>
+  </div>
+</body>
+</html>

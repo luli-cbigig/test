@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发现</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="css/wechat_style.css" rel="stylesheet">
+    <style>
+      #wrap .test7{
+        margin: 25px 10px;
+        float: right;
+        opacity: 0.6;
+      }
+      .test8{
+        font-size: 80px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        float: left;
+        opacity: 0.6;
+        margin: 25px 10px 0;
+      }
+      #wrap .back_color{
+        height: 30px;
+        background-color: #ecf0f1;
+        opacity: 0.9;
+      }
+      .test7{
+        font-size: 50px;
+        float: right;
+        opacity: 0.6;
+      }
+      .anno{
+        width: 300px;
+        font-size: 50px;
+        font-family: 仿宋;
+        font-weight: bold;
+        float: left;
+        margin: 30px;
+      }
+      #wrap ul a{
+        text-decoration: none;
+        color: black;
+      }
+      .test2{
+        font-size:50px;
+        margin:0 25px;
+      }
+    </style>
+</head>
+<body>
+  <div id="wrap">
+  <div class="top">
+    <div id="time" class="times">
+      <script>
+        setInterval("fun(time)",1);//按照指定的周期来调用函数或计算表达式
+        function fun(timeID){//创建函数
+          var date=new Date();//创建对象
+          var h=date.getHours();
+          var min=date.getMinutes();
+          if (h<10){
+            h="0"+h;
+          }
+          if (min<10){
+            min="0"+min;
+          }
+          document.getElementById(timeID.id).innerHTML=h+":"+min
+        }
+      </script>
+    </div>
+    <div class="iocns">
+      <span class="iconfont test">&#xeb20;</span>
+      <span class="iconfont test">&#xeb07;</span>
+      <span class="iconfont test">&#xeb0b;</span>
+      <span class="iconfont test">&#xe626;</span>
+      <span class="iconfont test">&#xeb0c;</span>
+      <span class="iconfont test">&#xe747;</span>
+    </div>
+  </div>
+  <div class="titiles">
+    <div class="tit_content"><strong>发现</strong></div>
+    <div class="iocns">
+      <a href=""><span class="iconfont test1">&#xe61c;</span></a>
+      <div id="jiahao_one">
+        <div id="triangle"></div>
+        <div id="jiahao">
+          <ul class="jiahao_content">
+            <li><span class="iconfont test2">&#xe61d;</span><span class="anno_1">发起群聊</span></li>
+            <li><span class="iconfont test2">&#xe630;</span><span class="anno_1">新的朋友</span></li>
+            <li><span class="iconfont test2">&#xe601;</span><span class="anno_1">扫一扫</span></li>
+            <li><span class="iconfont test2">&#xe602;</span><span class="anno_1">收付款</span></li>
+            <li><span class="iconfont test2">&#xe647;</span><span class="anno_1">帮助与反馈</span></li>
+          </ul>
+        </div>
+      </div>
+      <span class="iconfont test1">&#xe63d;</span>
+    </div>
+  </div>
+  <ul>
+    <a href="Circle%20of%20Friends.html">
+      <li><div class="iconfont test8">&#xe608;</div><div class="anno">朋友圈</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <div class="back_color"></div>
+    <a href="">
+      <li><div class="iconfont test8">&#xe601;</div><div class="anno">扫一扫</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <a href="">
+      <li><div class="iconfont test8">&#xeb13;</div><div class="anno">摇一摇</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <div class="back_color"></div>
+    <a href="">
+      <li><div class="iconfont test8">&#xe60a;</div><div class="anno">看一看</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <a href="">
+      <li><div class="iconfont test8">&#xe611;</div><div class="anno">搜一搜</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <div class="back_color"></div>
+    <a href="">
+      <li><div class="iconfont test8">&#xe718;</div><div class="anno">附近的人</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <div class="back_color"></div>
+    <a href="">
+      <li><div class="iconfont test8">&#xe60e;</div><div class="anno">购物</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <a href="">
+      <li><div class="iconfont test8">&#xeb15;</div><div class="anno">游戏</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <div class="back_color"></div>
+    <a href="">
+      <li><div class="iconfont test8">&#xeb08;</div><div class="anno">小程序</div><div class="iconfont test7">&#xe60b;</div></li>
+    </a>
+    <div class="back_color"></div>
+  </ul>
+  <div class="manager">
+    <a href="微信页面.html"><div><span class="iconfont">&#xe63c;</span><br><span><strong>微信</strong></span></div></a>
+    <a href="address_book.html"><div><span class="iconfont">&#xe6c2;</span><br><span><strong>通讯录</strong></span></div></a>
+    <a href="discover.html"><div style="color: #62b900"><span class="iconfont">&#xe629;</span><br><span><strong>发现</strong></span></div></a>
+    <a href="myself.html"><div><span class="iconfont">&#xe61e;</span><br><span><strong>我</strong></span></div></a>
+  </div>
+</div>
+</body>
+</html>

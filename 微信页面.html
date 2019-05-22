@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="css/wechat_style.css" rel="stylesheet">
+  <style>
+    .test2{
+      font-size:50px;
+      margin:0 25px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="top">
+      <div id="time" class="times">
+        <script>
+          setInterval("fun(time)",1);//按照指定的周期来调用函数或计算表达式
+          function fun(timeID){//创建函数
+            var date=new Date();//创建对象
+            var h=date.getHours();
+            var min=date.getMinutes();
+            if (h<10){
+              h="0"+h;
+            }
+            if (min<10){
+              min="0"+min;
+            }
+            document.getElementById(timeID.id).innerHTML=h+":"+min
+          }
+        </script>
+      </div>
+      <div class="iocns">
+        <span class="iconfont test gra_change">&#xeb20;</span>
+        <span class="iconfont test">&#xeb07;</span>
+        <span class="iconfont test">&#xeb0b;</span>
+        <span class="iconfont test">&#xe626;</span>
+        <span class="iconfont test">&#xeb0c;</span>
+        <span class="iconfont test">&#xe747;</span>
+      </div>
+    </div>
+    <div class="titiles">
+      <div class="tit_content"><strong>微信</strong></div>
+      <div class="iocns">
+        <a href=""><span class="iconfont test1">&#xe61c;</span></a>
+        <div id="jiahao_one">
+          <div id="triangle"></div>
+          <div id="jiahao">
+            <ul class="jiahao_content">
+              <li><span class="iconfont test2">&#xe61d;</span><span class="anno_1">发起群聊</span></li>
+              <li><span class="iconfont test2">&#xe630;</span><span class="anno_1">新的朋友</span></li>
+              <li><span class="iconfont test2">&#xe601;</span><span class="anno_1">扫一扫</span></li>
+              <li><span class="iconfont test2">&#xe602;</span><span class="anno_1">收付款</span></li>
+              <li><span class="iconfont test2">&#xe647;</span><span class="anno_1">帮助与反馈</span></li>
+            </ul>
+          </div>
+        </div>
+        <span class="iconfont test1">&#xe63d;</span>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <img src="img/t-1.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:23</div>
+        </div>
+        <div class="chat_frame">你在干嘛呢？</div>
+      </li>
+      <li>
+        <img src="img/t-2.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:22</div>
+        </div>
+        <div class="chat_frame">what do you do？</div>
+      </li>
+      <li>
+        <img src="img/t-03.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:21</div></div>
+        <div class="chat_frame">你干哈咧？</div>
+      </li>
+      <li>
+        <img src="img/t-04.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:10</div></div>
+        <div class="chat_frame">今天累吗？</div>
+      </li>
+      <li>
+        <img src="img/t-05.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:09</div></div>
+        <div class="chat_frame">听说你们哪儿在下雨？</div>
+      </li>
+      <li>
+        <img src="img/t-06.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:05</div></div>
+        <div class="chat_frame">你在干嘛啊，你怎么不接电话啊？</div>
+      </li>
+      <li>
+        <img src="img/t-07.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">12:04</div></div>
+        <div class="chat_frame">你能回句话吗？我很担心</div>
+      </li>
+      <li>
+        <img src="img/t-08.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:56</div></div>
+        <div class="chat_frame">别闹了好吗？</div>
+      </li>
+      <li>
+        <img src="img/t-09.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:54</div></div>
+        <div class="chat_frame">别做傻事，别</div>
+      </li>
+      <li>
+        <img src="img/t-10.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:52</div></div>
+        <div class="chat_frame">别走好吗？回来啊！</div>
+      </li>
+      <li>
+        <img src="img/t-11.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:50</div></div>
+        <div class="chat_frame">求求你了，回来好吗？</div>
+      </li>
+      <li>
+        <img src="img/t-12.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:48</div></div>
+        <div class="chat_frame">能不能见你一面？</div>
+      </li>
+      <li>
+        <img src="img/t-13.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:26</div></div>
+        <div class="chat_frame">你在哪儿呢？</div>
+      </li>
+      <li>
+        <img src="img/t-14.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:23</div></div>
+        <div class="chat_frame">我到了...</div>
+      </li>
+      <li>
+        <img src="img/t-15.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:16</div></div>
+        <div class="chat_frame">你到了吗？</div>
+      </li>
+      <li>
+        <img src="img/t-16.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:12</div></div>
+        <div class="chat_frame">怎么看不见你啊？</div>
+      </li>
+      <li>
+        <img src="img/t-17.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:10</div></div>
+        <div class="chat_frame">什么？</div>
+      </li>
+      <li>
+        <img src="img/t-18.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:08</div></div>
+        <div class="chat_frame">在我身后？</div>
+      </li>
+      <li>
+        <img src="img/t-19.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:05</div></div>
+        <div class="chat_frame">哪儿呢？</div>
+      </li>
+      <li>
+        <img src="img/t-20.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">11:00</div></div>
+        <div class="chat_frame">没看见你啊？</div>
+      </li>
+      <li>
+        <img src="img/t-21.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">10:56</div></div>
+        <div class="chat_frame">你到底在哪儿呢？</div>
+      </li>
+      <li>
+        <img src="img/t-22.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">10:23</div></div>
+        <div class="chat_frame">你不会在跟我玩躲猫猫吧？</div>
+      </li>
+      <li>
+        <img src="img/t-23.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">10:16</div></div>
+        <div class="chat_frame">这样不好玩！</div>
+      </li>
+      <li>
+        <img src="img/t-24.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">09:56</div></div>
+        <div class="chat_frame">出来嘛...</div>
+      </li>
+      <li>
+        <img src="img/t-25.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">09:50</div></div>
+        <div class="chat_frame">没有，我没有训你</div>
+      </li>
+      <li>
+        <img src="img/t-26.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">09:21</div></div>
+        <div class="chat_frame">什么？你要走了？</div>
+      </li>
+      <li>
+        <img src="img/t-27.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">09:02</div></div>
+        <div class="chat_frame">不要，说好的今天我能见到你的</div>
+      </li>
+      <li>
+        <img src="img/t-28.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">昨天</div></div>
+        <div class="chat_frame">你怎么能食言呢</div>
+      </li>
+      <li>
+        <img src="img/t-29.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">周三</div></div>
+        <div class="chat_frame">什么？我不可能见到你</div>
+      </li>
+      <li>
+        <img src="img/t-30.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">周一</div></div>
+        <div class="chat_frame">为什么？为什么不可能？</div>
+      </li>
+      <li>
+        <img src="img/t-31.jpg" alt="加载失败">
+        <div class="linkman">梓然<div class="time2">周一</div></div>
+        <div class="chat_frame">因为，我只是你想象出来的啊...</div>
+      </li>
+    </ul>
+    <div class="manager">
+      <a href="微信页面.html"><div style="color: #62b900"><span class="iconfont">&#xe63c;</span><br><span><strong>微信</strong></span></div></a>
+      <a href="address_book.html"><div><span class="iconfont">&#xe6c2;</span><br><span><strong>通讯录</strong></span></div></a>
+      <a href="discover.html"><div><span class="iconfont">&#xe629;</span><br><span><strong>发现</strong></span></div></a>
+      <a href="myself.html"><div><span class="iconfont">&#xe61e;</span><br><span><strong>我</strong></span></div></a>
+    </div>
+  </div>
+</body>
+</html>
