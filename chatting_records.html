@@ -3,8 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>聊天记录</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="css/wechat_style.css" rel="stylesheet">
+  <style>
+    .leave{
+      font-size: larger;
+    }
+    #wrap .titiles .tit_content a{
+      text-decoration: none;
+      color: black;
+    }
+    #wrap .tit_content{
+      width: 400px;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .message_box{
+      width: 100%;
+      height: 1450px;
+    }
+    .tiao1{
+      width: 100%;
+      height: 1470px;
+      border: 1px solid black;
+    }
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      position: relative;
+      top: 60px;
+      left: 30px;
+    }
+    .test9{
+      float: left;
+      font-size: 60px;
+      margin:40px 0 0 20px;
+    }
+    .chating{
+      width: 60%;
+      font-size: 40px;
+      font-family: 仿宋;
+      color: black;
+      background-color: #62b900;
+      position: relative;
+      top: -40px;
+      left: 170px;
+      border-radius: 10px;
+         }
+    #wrap .touxiang2{
+      float: right;
+      position: relative;
+      top: -40px;
+      right: 70px;
+    }
+    #wrap .chating2{
+      width: 45%;
+      height: 100px;
+      font-size: 40px;
+      font-family: 仿宋;
+      color: black;
+      background-color: #62b900;
+      position: relative;
+      top: 20px;
+      right: -340px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
+<div id="wrap">
+  <div class="top">
+    <div id="time" class="times">
+      <script>
+        setInterval("fun(time)",1);//按照指定的周期来调用函数或计算表达式
+        function fun(timeID){//创建函数
+          var date=new Date();//创建对象
+          var h=date.getHours();
+          var min=date.getMinutes();
+          if (h<10){
+            h="0"+h;
+          }
+          if (min<10){
+            min="0"+min;
+          }
+          document.getElementById(timeID.id).innerHTML=h+":"+min
+        }
+      </script>
+    </div>
+    <div class="iocns">
+      <div id="dianchi">
+        <span class="iconfont test gra_change">&#xeb1c;</span>
+        <span class="iconfont test gra_change">&#xeb1d;</span>
+        <span class="iconfont test gra_change">&#xeb1e;</span>
+        <span class="iconfont test gra_change">&#xeb1f;</span>
+        <span class="iconfont test gra_change">&#xeb20;</span>
+      </div>
+      <span class="iconfont test">&#xeb07;</span>
+      <span class="iconfont test">&#xeb0b;</span>
+      <span class="iconfont test">&#xe626;</span>
+      <span class="iconfont test">&#xeb0c;</span>
+      <span class="iconfont test">&#xe747;</span>
+    </div>
+  </div>
+  <div class="titiles">
+    <div class="tit_content">
+      <a href="微信页面.html"><span class="iconfont leave">&#xeb09;</span></a>
+      <span>夜雨声烦</span>
+    </div>
+    <div class="iocns">
+      <span class="iconfont test1">&#xeb1a;</span>
+    </div>
+  </div>
+  <div class="message_box">
+    <div class="tiao1">
+      <div class="touxiang">
+        <img src="img/yeyushengfan.png" alt="加载失败">
+      </div>
+      <div class="chating"><span>在吗在吗在吗在吗在吗在吗在吗在吗在吗在吗在吗，快上线啊，就等你了!哎呀，还墨迹什么啊，你能不能快一点，快点啊！！！</span></div>
+      <div style="width: 100%;height: 50px"></div>
+      <div class="touxiang2">
+        <img src="img/eab78d0f1a6192fa96b107fcb48c330.jpg" alt="加载失败">
+      </div>
+      <div class="chating2"><span>好的，好的，我知道了，我马上就来</span></div>
+    </div>
+  </div>
+    <div>
+      <div><span class="iconfont test9">&#xeb19;</span></div>
+      <input type="text" style="width: 70%;height: 80px;float: left;line-height: 80px;margin:40px 0 0 20px;font-size: 40px">
+      <div><span class="iconfont test9">&#xeb17;</span></div>
+      <div><span class="iconfont test9">&#xeb16;</span></div>
+    </div>
+  </div>
 
+</div>
 </body>
 </html>

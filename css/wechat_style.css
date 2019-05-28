@@ -143,6 +143,7 @@
 @keyframes charge {
   20%{
     color: red;
+    opacity: 0;
   }
   40%{
     color: #b3d4fc;
@@ -157,7 +158,11 @@
     color: green;
 }
 }
+#wrap #dianchi{
+  width: 50px;
+}
 .gra_change{
-  
+  position: absolute;
+  animation: charge 4s infinite alternate;
 }
 
